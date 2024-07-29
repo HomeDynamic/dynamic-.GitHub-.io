@@ -1,0 +1,263 @@
+.circle-animate {
+ position: absolute;
+ width: 250px;
+ height: 250px;
+ z-index: -1;
+ animation-fill-mode: forwards;
+ animation: circle infinite ease-in-out 7s;
+}
+
+@keyframes circle {
+ 0% {
+   left: 50px;
+   top: 20px;
+   border-bottom-left-radius: 90px;
+   border-bottom-right-radius: 110px;
+   border-top-left-radius: 120px;
+   border-top-right-radius: 135px;
+ }
+
+ 25% {
+   top: 100px;
+   left: 130px;
+
+   border-bottom-left-radius: 220px;
+   border-bottom-right-radius: 150px;
+   border-top-left-radius: 110px;
+   border-top-right-radius: 220px;
+ }
+
+ 50% {
+   top: 130px;
+   left: 100px;
+
+   border-bottom-left-radius: 130px;
+   border-bottom-right-radius: 120px;
+   border-top-left-radius: 100px;
+   border-top-right-radius: 90px;
+ }
+
+ 75% {
+   left: 50px;
+   top: 70px;
+
+   border-bottom-left-radius: 320px;
+   border-bottom-right-radius: 210px;
+   border-top-left-radius: 220px;
+   border-top-right-radius: 235px;
+ }
+
+ 100% {
+   top: 20px;
+   left: 50px;
+   border-bottom-left-radius: 90px;
+   border-bottom-right-radius: 110px;
+   border-top-left-radius: 120px;
+   border-top-right-radius: 135px;
+ }
+}
+
+.cone-animate {
+ position: absolute;
+ width: 200px;
+ height: 150px;
+ z-index: -1;
+ animation: cone infinite ease-in-out 8s;
+}
+
+@keyframes cone {
+ 0% {
+   right: 50px;
+   top: 20px;
+ }
+
+ 25% {
+   top: 100px;
+   right: 130px;
+ }
+
+ 50% {
+   top: 130px;
+   right: 100px;
+ }
+
+ 75% {
+   right: 50px;
+   top: 70px;
+ }
+
+ 100% {
+   top: 20px;
+   right: 50px;
+ }
+}
+
+.mini-circle-animate {
+ position: absolute;
+ width: 100px;
+ height: 100px;
+ z-index: -1;
+ animation: miniCircle infinite ease-in-out 8s;
+}
+
+@keyframes miniCircle {
+ 0% {
+   left: 100px;
+   bottom: 50px;
+ }
+
+ 20% {
+   left: 200px;
+   bottom: 100px;
+ }
+
+ 40% {
+   left: 300px;
+   bottom: 120px;
+ }
+
+ 60% {
+   left: 500px;
+   bottom: 100px;
+ }
+
+ 80% {
+   left: 400px;
+   bottom: 0px;
+ }
+
+ 100% {
+   left: 100px;
+   bottom: 50px;
+ }
+}
+.navbar-nav .nav-link.active{
+ text-decoration: underline;
+ /* border-bottom: 3px solid black; */
+}
+h2::before{
+ content: "";
+ height: 4px;
+ border-radius: 12px;
+ width: 31px;
+ background-color: darkblue;
+   bottom: 7px;
+   display: inline-flex;
+   right: 5px;
+}
+h2::after{
+ content: "";
+ height: 4px;
+ border-radius: 12px;
+ width: 31px;
+ background-color: darkblue;
+   bottom: 7px;
+   display: inline-flex;
+   left: 5px;
+}
+@media (max-width: 576px) {
+ h2::before {
+   display: none !important;
+ }
+ h2::after{
+  display: none !important;
+ }
+}
+
+
+.Tabs .nav-pills .nav-link {
+  color: black;
+  /* background-color: WHITE; */
+}
+
+.Tabs .nav-pills .nav-link.active {
+  color: var(---dark-blue--);
+  background-color: WHITE;
+  box-shadow: -7px 6px 0px 0px var(---dark-blue--);
+  border: 2px solid var(---dark-blue--);
+}
+
+.Tabs div>.row img {
+  border-radius: 10px;
+  aspect-ratio: 3/3;
+  height: 100%;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  transition: ease-in-out 0.7s;
+}
+
+.Tabs div > .row img:hover {
+  transform: scale(0.9);
+  transition: ease-in-out 0.7s;
+}
+.project-detail-inner {
+  display: none;
+  position: absolute;
+  z-index: 5;
+  height: 100%;
+  border-radius: 10px;
+
+  width: 100%;
+  background-color: #2929298f;
+  transition: ease-in-out 0.7s;
+  left: 0;
+}
+
+.project-detail-main:hover .project-detail-inner {
+  display: block;
+  transition: ease-in-out 0.7s;
+
+}
+
+.card-list .card-item .user-image{
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  /* margin-top: 3px; */
+  /* margin-bottom: 10px; */
+  border: 3px solid #fff;
+  
+}
+ 
+.slider-wrapper{
+
+  overflow: hidden;
+  margin: 0 70px 55px;
+}
+.container-swiper{
+  max-width: 1316px;
+  width: 100%;
+
+ }
+.card-list .card-item{
+  color: #000;
+  width: 400px;
+padding-left: 10px;
+padding-right: 10px;
+  background: rgb(193, 232, 247);
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.card-list .card-item .user-profession{
+  font-size: 30px;
+  color: #000;
+
+}
+@media (max-width:900px) {
+  .slider-wrapper{
+   margin: 0 10px 40px;
+  }
+  .slider-wrapper .swiper-slide-button{
+    display: none;
+   }
+}
+
+
+
+
+
+/* 
+ } 
+ 
+} */ */
